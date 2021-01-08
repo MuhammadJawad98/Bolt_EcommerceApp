@@ -6,7 +6,7 @@ class InputBox extends StatelessWidget {
   final String hintText;
   final Color txtColor, cursorColor;
   final TextStyle hintStyle;
-  final Icon icon;
+  final IconData icon;
   double fontsize;
   final Widget suffixIcon;
   final bool obscure;
@@ -33,6 +33,7 @@ class InputBox extends StatelessWidget {
         controller: controller,
         maxLines: 1,
         // obscureText: !obscure,
+
         decoration: InputDecoration(
             hintText: 'Enter your $hintText',
             enabledBorder: UnderlineInputBorder(
@@ -44,6 +45,7 @@ class InputBox extends StatelessWidget {
               //  when the TextFormField in focused
             ),
             border: UnderlineInputBorder(),
+            suffixIcon: Icon(icon),
             suffixStyle: TextStyle(
                 fontFamily: fontFamily, fontSize: fontsize, color: txtColor)));
   }
