@@ -1,4 +1,5 @@
 import 'package:bolt_ecommerce_app/views/WelcomeScreen.dart';
+import 'package:bolt_ecommerce_app/views/homeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:splash_screen_view/SplashScreenView.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         initialRoute: welcomeScreenRoute,
         debugShowCheckedModeBanner: false,
         home: SplashScreenView(
-          home: WelcomeScreen(),
+          home: HomeScreen(),
           duration: 5000,
           imageSize: 200,
           imageSrc: "assets/logo.png",
